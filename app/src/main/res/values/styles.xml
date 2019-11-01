@@ -1,0 +1,86 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/josefin_sans</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowBackground">
+            @drawable/bgsplash
+        </item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="splashstyle" parent="@style/AppTheme.NoActionBar">
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="small_text" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/josefin_sans_light</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="normal_text" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/josefin_sans</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="big_text" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/josefin_sans_semibold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="tablayout_style" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorFullWidth">false</item>
+        <item name="tabSelectedTextColor">@color/colorAccent</item>
+        <item name="tabTextColor">@android:color/white</item>
+        <item name="tabTextAppearance">@style/normal_text</item>
+    </style>
+
+    <style name="primary_btn" parent="TextAppearance.AppCompat.Button">
+        <item name="android:background">@drawable/bg_button_primary</item>
+        <item name="android:textAppearance">@style/normal_text</item>
+        <item name="android:fontFamily">@font/josefin_sans</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="primary_dark_btn" parent="TextAppearance.AppCompat.Button">
+        <item name="android:background">@drawable/bg_button_dark</item>
+        <item name="android:textAppearance">@style/normal_text</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/josefin_sans</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="accent_btn" parent="TextAppearance.AppCompat.Button">
+        <item name="android:background">@drawable/bg_button_accent</item>
+        <item name="android:fontFamily">@font/josefin_sans</item>
+        <item name="android:textAppearance">@style/normal_text</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="like_btn" parent="TextAppearance.AppCompat.Button">
+        <item name="android:background">@drawable/bg_button_like</item>
+        <item name="android:fontFamily">@font/josefin_sans</item>
+        <item name="android:textAppearance">@style/normal_text</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ExploreFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/event_id"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/event_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/event_id"
+                android:text="event name"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/event_venue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_name"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/event_id"
+                android:text="venue"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/event_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_venue"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/event_id"
+                android:background="@color/colorPrimary"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="10/11/2019"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/event_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_date"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/event_id"
+                android:text="INR 56990"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
