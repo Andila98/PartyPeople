@@ -12,7 +12,6 @@ public class Events {
     private List<String> event_type;
     private List<String>event_cartegory;
     private String event_RSVP;
-    private List<String> events_VIP;
     private String artists;
     private String event_security;
     private String event_sponser;
