@@ -13,6 +13,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.partypeople.user.R;
 import com.partypeople.user.adaptors.viewpager.BaseViewpagerAdapter;
+import com.partypeople.user.adaptors.viewpager.SplashViewpagerAdapter;
 import com.partypeople.user.core.PartyApp;
 
 import java.util.ArrayList;
@@ -31,7 +32,7 @@ public class SplashActivity extends AppCompatActivity {
         splash_appname = findViewById(R.id.splash_appname);
         splash_tablayout = findViewById(R.id.splash_tablayout);
         splash_viewpager = findViewById(R.id.splash_viewpager);
-        splash_viewpager.setAdapter(new BaseViewpagerAdapter(getSupportFragmentManager(), getfragments(), getTitles()));
+        splash_viewpager.setAdapter(new SplashViewpagerAdapter(getSupportFragmentManager(), getfragments(), getTitles()));
         splash_tablayout.setupWithViewPager(splash_viewpager, true);
 
         if (((PartyApp)getApplication()).usersignedIn()){

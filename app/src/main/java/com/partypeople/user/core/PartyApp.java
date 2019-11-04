@@ -11,5 +11,4 @@ public class PartyApp extends Application {
 
     }
 
-
 }
