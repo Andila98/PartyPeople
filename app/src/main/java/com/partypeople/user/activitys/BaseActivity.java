@@ -123,7 +123,6 @@ public class BaseActivity extends AppCompatActivity {
 
     private void preparetrendData() {
 
-
         Trending trend = new Trending("", "Action & Adventure", "2015", "Mad Max: Fury Road", "Inside Out", "Inside Out", "Inside Out", "Inside Out", "", "","" );
         eventList.add(trend);
 
