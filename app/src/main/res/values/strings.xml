@@ -7,4 +7,11 @@
     <string name="title_activity_event">EventActivity</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_event_view">EventViewActivity</string>
+
+    <!-- Event list -->
+    <string name="event_image_description">Event photo</string>
+    <string name="rsvp_going">I\'m going</string>
+    <string name="share_event">Share event</string>
+    <string name="event_rsvp_count">%1$d going</string>
+    <string name="event_price_free">Free</string>
 </resources>
