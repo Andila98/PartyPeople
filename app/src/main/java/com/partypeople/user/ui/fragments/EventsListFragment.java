@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -18,6 +19,7 @@ import com.partypeople.user.databinding.FragmentEventsListBinding;
 import com.partypeople.user.models.Event;
 import com.partypeople.user.ui.UiState;
 import com.partypeople.user.ui.adapter.EventAdapter;
+import com.partypeople.user.ui.viewmodel.EventDetailsViewModel;
 import com.partypeople.user.ui.viewmodel.EventsViewModel;
 
 import java.util.Collections;
@@ -102,9 +104,12 @@ public abstract class EventsListFragment extends Fragment implements EventAdapte
 
     @Override
     public void onEventClick(@NonNull Event event) {
-        // Event details screen arrives with navigation in Phase 8.
-        Snackbar.make(binding.getRoot(), R.string.event_details_coming_soon,
-                Snackbar.LENGTH_SHORT).show();
+        if (event.getId() == null) {
+            return;
+        }
+        Bundle args = new Bundle();
+        args.putString(EventDetailsViewModel.ARG_EVENT_ID, event.getId());
+        NavHostFragment.findNavController(this).navigate(R.id.eventDetailsFragment, args);
     }
 
     @Override

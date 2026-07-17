@@ -12,9 +12,9 @@ import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.partypeople.user.R;
-import com.partypeople.user.adaptors.viewpager.BaseViewpagerAdapter;
 import com.partypeople.user.adaptors.viewpager.SplashViewpagerAdapter;
 import com.partypeople.user.core.PartyApp;
+import com.partypeople.user.ui.activity.MainActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,8 +35,8 @@ public class SplashActivity extends AppCompatActivity {
         splash_viewpager.setAdapter(new SplashViewpagerAdapter(getSupportFragmentManager(), getfragments(), getTitles()));
         splash_tablayout.setupWithViewPager(splash_viewpager, true);
 
-        if (((PartyApp)getApplication()).usersignedIn()){
-            startActivity(new Intent(this,BaseActivity.class));
+        if (((PartyApp) getApplication()).usersignedIn()) {
+            startActivity(new Intent(this, MainActivity.class));
             finish();
         }
 

@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Party People</string>
-    <string name="title_activity_base">BaseActivity</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -20,5 +19,11 @@
     <string name="rsvp_success">You\'re going! 🎉</string>
     <string name="rsvp_failed">RSVP failed — try again</string>
     <string name="share_event_text">Check out %1$s at %2$s on Party People!</string>
-    <string name="event_details_coming_soon">Event details coming soon</string>
+    <string name="tab_trending">Trending</string>
+    <string name="tab_popular">Popular</string>
+    <string name="tab_explore">Explore</string>
+    <string name="event_details_title">Event details</string>
+    <string name="event_details_error">Couldn\'t load this event</string>
+    <string name="label_artists">Artists</string>
+    <string name="label_hosted_by">Hosted by %1$s</string>
 </resources>
