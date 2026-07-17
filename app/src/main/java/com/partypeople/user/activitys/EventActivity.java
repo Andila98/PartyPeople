@@ -9,8 +9,6 @@ import com.partypeople.user.R;
 import com.partypeople.user.adaptors.viewpager.BaseViewpagerAdapter;
 import com.partypeople.user.adaptors.viewpager.EventViewpagerAdapter;
 import com.partypeople.user.fragments.PastEvents;
-import com.partypeople.user.fragments.PopularFragment;
-import com.partypeople.user.fragments.TrendingFragment;
 import com.partypeople.user.fragments.UpcomingEvent;
 
 import androidx.appcompat.app.AppCompatActivity;

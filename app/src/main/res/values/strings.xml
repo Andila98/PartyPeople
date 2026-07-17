@@ -14,4 +14,11 @@
     <string name="share_event">Share event</string>
     <string name="event_rsvp_count">%1$d going</string>
     <string name="event_price_free">Free</string>
+    <string name="events_empty_title">No events yet — check back soon!</string>
+    <string name="events_error_generic">Couldn\'t load events</string>
+    <string name="retry">Retry</string>
+    <string name="rsvp_success">You\'re going! 🎉</string>
+    <string name="rsvp_failed">RSVP failed — try again</string>
+    <string name="share_event_text">Check out %1$s at %2$s on Party People!</string>
+    <string name="event_details_coming_soon">Event details coming soon</string>
 </resources>
