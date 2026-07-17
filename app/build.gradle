@@ -44,6 +44,10 @@ dependencies {
     implementation 'com.google.firebase:firebase-storage'
     implementation 'com.google.firebase:firebase-database'
 
+    // Lifecycle (LiveData / ViewModel)
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.7.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.7.0'
+
     // Dependency injection
     implementation 'com.google.dagger:hilt-android:2.50'
     annotationProcessor 'com.google.dagger:hilt-compiler:2.50'
