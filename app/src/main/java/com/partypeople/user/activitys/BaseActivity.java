@@ -94,12 +94,10 @@ public class BaseActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.action_signout:
-                FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(this,SplashActivity.class));
-                finish();
-                break;
+        if (item.getItemId() == R.id.action_signout) {
+            FirebaseAuth.getInstance().signOut();
+            startActivity(new Intent(this, SplashActivity.class));
+            finish();
         }
         return super.onOptionsItemSelected(item);
 
