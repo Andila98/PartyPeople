@@ -4,13 +4,13 @@ import com.google.firebase.firestore.DocumentId;
 
 import java.util.Objects;
 
-public class Artist {
+public class Sponsor {
 
     @DocumentId
     private String id;
     private String name;
 
-    public Artist() {
+    public Sponsor() {
         // Required by Firestore.
     }
 
@@ -33,9 +33,9 @@ public class Artist {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Artist)) return false;
-        Artist artist = (Artist) o;
-        return Objects.equals(id, artist.id) && Objects.equals(name, artist.name);
+        if (!(o instanceof Sponsor)) return false;
+        Sponsor sponsor = (Sponsor) o;
+        return Objects.equals(id, sponsor.id) && Objects.equals(name, sponsor.name);
     }
 
     @Override

@@ -23,10 +23,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.core.Tag;
 import com.partypeople.user.R;
-
-import java.security.PublicKey;
+import com.partypeople.user.ui.activity.MainActivity;
 
 public class SignInFragment extends Fragment implements View.OnClickListener {
 
@@ -82,7 +80,7 @@ public class SignInFragment extends Fragment implements View.OnClickListener {
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if (task.isSuccessful()) {
-                    startActivity(new Intent(getContext(),BaseActivity.class));
+                    startActivity(new Intent(getContext(), MainActivity.class));
                     getActivity().finish();
                 }else
                     Toast.makeText(getContext(), "please check your Password",Toast.LENGTH_SHORT).show();

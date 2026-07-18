@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.partypeople.user">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,13 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activitys.EveentViewActivity"></activity>
-        <activity
-            android:name=".activitys.EventActivity"
-            android:label="@string/title_activity_event"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activitys.SplashActivity"
+            android:exported="true"
             android:theme="@style/splashstyle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,11 +22,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activitys.BaseActivity"
-            android:label="@string/title_activity_base"
+            android:name=".ui.activity.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activitys.SignInFragment" />
-        <activity android:name=".activitys.SignUpFragment" />
     </application>
 
 </manifest>

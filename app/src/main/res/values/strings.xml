@@ -1,10 +1,29 @@
 <resources>
     <string name="app_name">Party People</string>
-    <string name="title_activity_base">BaseActivity</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_event">EventActivity</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_event_view">EventViewActivity</string>
+
+    <!-- Event list -->
+    <string name="event_image_description">Event photo</string>
+    <string name="rsvp_going">I\'m going</string>
+    <string name="share_event">Share event</string>
+    <string name="event_rsvp_count">%1$d going</string>
+    <string name="event_price_free">Free</string>
+    <string name="events_empty_title">No events yet — check back soon!</string>
+    <string name="events_error_generic">Couldn\'t load events</string>
+    <string name="retry">Retry</string>
+    <string name="rsvp_success">You\'re going! 🎉</string>
+    <string name="rsvp_failed">RSVP failed — try again</string>
+    <string name="share_event_text">Check out %1$s at %2$s on Party People!</string>
+    <string name="tab_trending">Trending</string>
+    <string name="tab_popular">Popular</string>
+    <string name="tab_explore">Explore</string>
+    <string name="event_details_title">Event details</string>
+    <string name="event_details_error">Couldn\'t load this event</string>
+    <string name="label_artists">Artists</string>
+    <string name="label_hosted_by">Hosted by %1$s</string>
 </resources>

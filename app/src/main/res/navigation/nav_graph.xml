@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/trendingFragment">
+
+    <fragment
+        android:id="@+id/trendingFragment"
+        android:name="com.partypeople.user.ui.fragments.TrendingFragment"
+        android:label="@string/tab_trending" />
+
+    <fragment
+        android:id="@+id/popularFragment"
+        android:name="com.partypeople.user.ui.fragments.PopularFragment"
+        android:label="@string/tab_popular" />
+
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="com.partypeople.user.ui.fragments.ExploreFragment"
+        android:label="@string/tab_explore" />
+
+    <fragment
+        android:id="@+id/eventDetailsFragment"
+        android:name="com.partypeople.user.ui.fragments.EventDetailsFragment"
+        android:label="@string/event_details_title">
+        <argument
+            android:name="eventId"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
